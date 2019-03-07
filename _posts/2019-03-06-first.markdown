@@ -3,4 +3,6 @@ layout: post
 mathjax: true
 ---
 
+I don't know what to write
+
 $$ f(x) $$
