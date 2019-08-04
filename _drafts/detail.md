@@ -1,13 +1,14 @@
 ---
 layout: post
 mathjax: true
-title: A Tricky Detail from Convex Analysis
+title: Tricky Details from Convex Analysis
 categories: linear algebra, analysis 
 ---
 
-There's a detail that's quickly glossed over in a proof that the dimension of
-the relative interior of a convex set is equal to the dimension of the set
-itself:
+In the book "Fundamentals of Convex Analysis" by Hiriart-Urruty and Lemarechal
+there are a few details that are quickly glossed over in the proof that the
+dimension of the relative interior of a convex set is equal to the dimension of
+the set itself:
 
 If $x_0,\ldots,x_k$ is a set of $k+1$ affinely independent points, then if $y$
 is such that there exist $a_0,\ldots,a_k \in \mathbb R$ with $y = \sum_{i=0}^k
