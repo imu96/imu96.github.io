@@ -1,19 +1,23 @@
 ---
 layout: post
 mathjax: true
-title: Tricky Details from Convex Analysis
-categories: linear algebra, analysis 
+title: Some Details Concerning Affine Combinations
+categories: [linear algebra, convex analysis]
 ---
 
-In the book "Fundamentals of Convex Analysis" by Hiriart-Urruty and Lemarechal
+$\def\sb{_}$
+ 
+# A Detail
+
+In the book _Fundamentals of Convex Analysis_ by Hiriart-Urruty and Lemarechal
 there are a few details that are quickly glossed over in the proof that the
 dimension of the relative interior of a convex set is equal to the dimension of
 the set itself:
 
-If $x_0,\ldots,x_k$ is a set of $k+1$ affinely independent points, then if $y$
+If $x_0,\ldots,x_k$ is a set of $k+1$ affinely independent points, and if $y$
 is such that there exist $a_0,\ldots,a_k \in \mathbb R$ with $y = \sum_{i=0}^k
 a_ix_i$ and $\sum_{i=0}^k a_i = 0$, then there exists $\delta > 0$ such that
-$\|y\| < \delta$ implies $|a_i| < \frac 1 {k+1}$ for all $0 \le i \le k$. 
+$\lVert y\rVert < \delta$ implies $|a_i| \le \frac 1 {k+1}$ for all $0 \le i \le k$. 
 
 There is actually an easy proof for this- one that was pointed out to me by a
 kind passerby. It goes as follows:
@@ -48,12 +52,12 @@ Lemma: If $T$ is in the affine hull of $S$, then $T$ is not affinely
 independent. Suppose the hypothesis. Then for $0 \le i \le k, 1\le j \le l$
 there exists $a_{ij}$ such that 
 
-\[y_i = \Big(\sum_{j=1}^l a_{ij} (x_j - x_0) \Big) + x_0\] 
+$$y_i = \Big(\sum_{j=1}^l a_{ij} (x_j - x_0) \Big) + x_0$$ 
 
 By the first observation we made, we know that $T$ is affinely independent if
 and only if $y_1 - y_0, \ldots, y_k - y_0$ is linearly independent. However the
-latter inhabits the $l$ dimensional space spanned by $x_1 - x_0, \ldots, x_l -
-x_0$, so it is linearly dependent, from which it follows $T$ is affinely
+latter vectors inhabit the $l$ dimensional space spanned by $x_1 - x_0, \ldots,
+x_l - x_0$, so it is linearly dependent, from which it follows $T$ is affinely
 dependent. 
 
 The contrapositive of the above lemma says if $T$ is affinely independent, then
