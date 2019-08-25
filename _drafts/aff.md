@@ -28,6 +28,28 @@ independent by assumption, the map from $\alpha$ to $y$ is injective. From this
 it follows the map from $y$ to $\alpha$ is well-defined, linear, and
 continuous.
 
+Now let $\alpha$ be arbitrary subject to its $\mathcal {\ell}^2$-norm being
+less than $\frac 1 {(k+1)^2}$. Clearly this implies the absolute value of each
+of its components is less than $\frac 1 {k+1}$. However by the definition of
+continuity there exists $\delta > 0$ such that $\| y - 0\| < \delta$ implies
+$\|\alpha - 0\| < \frac 1 {(k+1)^2}$, completing the proof. 
+
+# An Analytic Proof
+
+Warning: This is less nice and uses more machinery, but hey. A proof is a
+proof. 
+
+Note that it suffices to show there does not exist a sequence
+$\\{\alpha^n\\}_{n=1}^\infty$ where each member of the sequence has infinity norm
+strictly larger that $1 / (k+1)$ such that for every $\varepsilon > 0$ there
+exists $N$ such that $n > N$ implies $\lVert y^n \rVert < \varepsilon$. 
+
+Without loss of generality there exists a subsequence $
+\\{\alpha^{n_i}\\}_{i=1}^\infty $ such that $ \lVert \alpha^{n_i} \rVert \sb{
+\infty}= \lvert \alpha^{n_i}_1 \rvert > \frac 1 {k+1} $. 
+
+# An Even Smaller Detail
+
 Somewhere near the proof the dimension of a convex set $X$ is defined as the
 dimension of its affine hull, which in turn is defined as the largest set of
 affinely independent vectors in the affine space. However it does not
