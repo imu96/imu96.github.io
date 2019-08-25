@@ -54,11 +54,11 @@ Somewhere near the proof the dimension of a convex set $X$ is defined as the
 dimension of its affine hull, which in turn is defined as the largest set of
 affinely independent vectors in the affine space. However it does not
 immediately follow that there exists a set of affine vectors in $X$ of the same
-size. Here is the proof that this is indeed the case:
+size. Here is a proof this is indeed the case:
 
 We begin by observing that a set of vectors $x_0,\ldots,x_k$ is affinely
 dependent if and only if the vectors $x_1 - x_0,\ldots, x_k - x_0$ are linearly
-ependent. 
+dependent. 
 
 Claim: If $X$ is a $k$ dimensional convex set, then there exist
 $S:=\{x_0,\ldots,x_k\} \subset X$ such that $S$ is a set of affinely
